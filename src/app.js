@@ -24,8 +24,6 @@ const copyFile = (
       resultOutput = `${output}/${input}`;
     }
 
-    console.log(output)
-
     fs.writeFile(`src/${resultOutput}`, fileData, (error) => {
       if (error) {
         console.log(error);
